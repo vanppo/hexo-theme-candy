@@ -1,0 +1,27 @@
+%navigation-item {
+  color: $primary-color;
+  line-height: 1em;
+  text-decoration: none;
+
+  &:hover {
+    color: $secondary-color;
+  }
+}
+
+.navigation {
+  max-width: $content-width;
+  margin: $post-space auto 0;
+  overflow: hidden;
+
+  &__prev {
+    @extend %navigation-item;
+
+    float: left;
+  }
+
+  &__next {
+    @extend %navigation-item;
+
+    float: right;
+  }
+}

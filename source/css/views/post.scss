@@ -1,0 +1,9 @@
+.post-article {
+  max-width: $content-width;
+  margin: 0 auto;
+  color: $post-color;
+
+  &__title {
+    color: $title-color;
+  }
+}

@@ -1,0 +1,46 @@
+.index-posts {
+  max-width: $content-width;
+  margin: 0 auto;
+}
+
+.index-post {
+  margin-top: $post-space;
+  padding: $post-padding;
+  border-radius: $border-radius;
+  box-shadow: $default-shadow;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:hover {
+    box-shadow: $active-shadow;
+  }
+
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  &__link:hover &__title,
+  &__link:hover &__excerpt {
+    color: $secondary-color;
+  }
+
+  &__title {
+    color: $title-color;
+    position: relative;
+
+    &:hovre::before {
+      content: "➤";
+      position: absolute;
+      left: -1.2em;
+      top: 0.5em;
+      font-size: 0.5em;
+    }
+  }
+
+  &__excerpt {
+    color: $excerpt-color;
+  }
+}

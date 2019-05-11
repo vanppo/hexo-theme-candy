@@ -1,0 +1,6 @@
+favicon: /assets/favicon.ico
+footer:
+  since: 2019
+
+node_sass:
+  outputStyle: compressed

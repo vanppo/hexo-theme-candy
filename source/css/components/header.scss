@@ -1,0 +1,9 @@
+.header {
+  background-image: url("/images/header-background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: $header-height;
+  padding: $global-padding;
+  position: relative;
+}
